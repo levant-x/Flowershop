@@ -84,10 +84,12 @@ body {
 .hero-title {
   font-family: "Gotham Pro Medium";
   font-size: 34px;
+  margin: auto;
   margin-bottom: 33px;
   text-transform: uppercase;
   letter-spacing: 0.34px;
   font-weight: 500;  
+  max-width: 690px;
 }
 
 .hero-description {
@@ -95,6 +97,8 @@ body {
   font-size: 18px;
   letter-spacing: 0.18px;
   line-height: 1.4;
+  max-width: 480px;
+  margin: auto;  
 }
 
 .flowers-slider {
@@ -298,6 +302,7 @@ body {
   font-size: 16px;
   color: white;
   background-color: #292929;  
+  border: none;
 }
 
 .card-button {
@@ -421,4 +426,84 @@ body {
 
 .author-link {
   color: #101010;
+}
+
+.modal {
+  display: none;
+  text-align: center;
+}
+
+.modal-title {
+  color: #292929;
+}
+
+.modal-input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.modal-button {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    text-align: center;
+  }
+
+  .header-contacts {
+    text-align: center;
+  }
+
+  .hero {
+    padding-top: 40px;
+  }
+
+  .hero-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 1.6;
+  }
+
+  .hero-description {
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .button {
+    padding: 20px 40px;
+    margin-top: 0;
+  }
+
+  .advantages-title {
+    font-size: 15px;
+  }
+
+  .colors {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .card-label {
+    display: block;
+    margin: 15px auto;
+  }
+
+  .counter-group {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer-info {
+    text-align: left;
+  }
+
+  .social-vk {
+    padding: 0;
+  }
 }
